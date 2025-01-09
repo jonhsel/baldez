@@ -16,7 +16,7 @@ with open('style.css') as f:
 
 #################
 
-st.image('images/baldez.png')
+st.image('images/baldez2.png')
 
 
 TIPOS_ARQUIVOS = ['Arquivos .pdf', 'Site', 'Youtube', 'Arquivos .csv', 'Arquivos .txt']
