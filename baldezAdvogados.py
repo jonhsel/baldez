@@ -3,6 +3,8 @@ import tempfile
 from langchain.memory import ConversationBufferMemory
 
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 
 from loaders import *
 
@@ -23,7 +25,11 @@ TIPOS_ARQUIVOS = ['Arquivos .pdf', 'Site', 'Youtube', 'Arquivos .csv', 'Arquivos
 
 CONFIG_MODELOS = {  'OpenAI': 
                             {'modelos': ['gpt-4o-mini', 'gpt-4o'],
-                            'chat': ChatOpenAI}
+                            'chat': ChatOpenAI},
+                    'Google':
+                            {'modelos':['gemini-1.5-flash', 'gemini-1.5-pro'],
+                             'chat': ChatGoogleGenerativeAI}
+
 
 
 }
@@ -105,7 +111,7 @@ def pagina_chat():
         chat = st.chat_message(mensagem.type)
         chat.markdown(mensagem.content)
 
-    input_usuario = st.chat_input('Fale com o Assistente!')
+    input_usuario = st.chat_input('Fale com o Assistente Virtual da Baldez Advogados Associados!')
     if input_usuario:
         memoria.chat_memory.add_user_message(input_usuario)
         chat = st.chat_message('human')

@@ -21,28 +21,37 @@ div.stAlert {
 }
 
 p {
-    font-size: 14pt;
-    
-    
+    font-size: 14pt;  
+}
+
+h2{
+    color: #052f12;
 }
 
 textarea{
     font-size: 14pt;
 }
 
-div.st-emotion-cache-1c7y2kd{
-    background-color: rgba(250, 210, 210, 0.5);
+div.st-emotion-cache-1ghhuty {
+    background-color: rgb(241, 218, 125);
 }
 
+/*cor alerta usuário*/
+div.st-emotion-cache-1c7y2kd{
+    background-color: rgba(244, 236, 205, 0.842);
+}
+
+/*robô*/
 div.st-emotion-cache-bho8sy{
     background-color: rgb(5, 50, 169);
 }
 
+/*cor alerta robô*/
 div.stChatMessage.st-emotion-cache-4oy321.eeusbqq4 {
     background-color: rgb(230, 240, 250);
 }
 
 button.st-emotion-cache-1rci6ej.ef3psqc13{
-    background-color: rgb(251, 233, 233);
-    border: 1px solid rgb(255, 75, 75);
+    background-color: rgb(244, 236, 205);
+    border: 1px solid rgb(55, 75, 75);
 }
