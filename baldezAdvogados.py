@@ -99,7 +99,7 @@ def carrega_modelo(provedor, modelo, api_key, tipo_arquivo, arquivo):
 
 
 def pagina_chat():
-    st.header('⚖️ Assistente Virtual - Baldez Advogados Associados')
+    st.header('⚖️ Assistente Virtual')
 
     chain = st.session_state.get('chain')
     if chain is None:
