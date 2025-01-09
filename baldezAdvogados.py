@@ -16,7 +16,7 @@ with open('style.css') as f:
 
 #################
 
-st.image('images/juria.png')
+st.image('images/baldez.png')
 
 
 TIPOS_ARQUIVOS = ['Arquivos .pdf', 'Site', 'Youtube', 'Arquivos .csv', 'Arquivos .txt']
@@ -68,7 +68,7 @@ def carrega_modelo(provedor, modelo, api_key, tipo_arquivo, arquivo):
     documento = carrega_arquivo(tipo_arquivo, arquivo)
     
 
-    system_message = ''' Você é um assistente técnico chamado 'assistente do Jonh Selmo'.
+    system_message = ''' Você é um assistente virtual do renomado exritório de advocacia 'Baldez Advogados'.
     Você possui acesso às seguintes informações vindas de um documento{}:
     
     ####
